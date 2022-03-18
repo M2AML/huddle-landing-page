@@ -1,0 +1,359 @@
+@use "src/variable"as *;
+@import "src/responsive";
+/*FONTS*/
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+//BODY
+body {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+//GENERAL
+a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    color: $very-dark-cyan;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+//CONTAINER
+.container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+//MAIN
+.main {
+    z-index: 1;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//BACKGROUND POSITION
+.bg__desktop,
+.bg__mobile {
+    position: absolute;
+    background-color: $very-pale-cyan;
+}
+
+.bg__desktop {
+    width: 100vw;
+    min-height: 100vh;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bg__mobile {
+    display: none;
+}
+
+.bg__footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $very-dark-cyan;
+    width: 100vw;
+    height: 53vh;
+}
+
+//HEADER
+.header {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        width: auto;
+    }
+
+    a {
+        color: $very-dark-cyan;
+        background-color: $white;
+        font-size: 1rem;
+        padding: 0.9rem 4.5rem;
+        border-radius: 30px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s;
+    }
+
+    a:hover {
+        color: $grayish-blue;
+    }
+}
+
+//ABOUT CONTAINER
+.about__container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .about__text {
+        width: 45%;
+    }
+
+    .about__text h1 {
+        font-size: 3rem;
+    }
+
+    .about__text p {
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        font-size: 1.7rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+
+    .about__text a {
+        background-color: $pink;
+        color: $white;
+        padding: 1.2rem 5rem;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .about__img {
+        width: 50%;
+    }
+}
+
+//WORK CONTAINER
+.work__container {
+    margin-top: 35vh;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        color: $grayish-blue;
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+}
+
+.grow__container,
+.flowing__container,
+.users__container {
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+
+    img {
+        width: 35%;
+    }
+}
+
+.grow__text,
+.flowing__text,
+.users__text {
+    width: 45%;
+}
+
+//COMMUNITY CONTAINER
+.community__container {
+    margin-top: 20vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 4rem 4.9rem;
+    background-color: $white;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5vh;
+    }
+
+    a {
+        font-size: 1.3rem;
+        background-color: $pink;
+        color: $white;
+        padding: 1.6rem 8rem;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    a:hover {
+        background-color: $pink-hover;
+    }
+}
+
+//FOOTER CONTAINER
+.footer__container {
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+
+    .footer__logo {
+        width: 20%;
+        margin-bottom: 5vh;
+    }
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+
+    .contact__adress {
+        width: 25%;
+
+        li .icon {
+            margin-right: 30px;
+        }
+
+        .location .icon {
+            width: 12%;
+        }
+
+        .email,
+        .phone {
+            align-items: center;
+        }
+
+        li {
+            margin-bottom: 2vh;
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .contact__about {
+        li {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .contact__career {
+        li {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .contact__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact__social span {
+        margin-right: 5px;
+    }
+
+    .social__icon-link {
+        display: flex;
+    }
+
+    .social__icon-link a {
+        margin-right: 1vw;
+    }
+
+    .facebook:hover path {
+        fill: $pink;
+    }
+
+    .twitter:hover path {
+        fill: $pink;
+    }
+
+    .instagram:hover path {
+        fill: $pink;
+    }
+}

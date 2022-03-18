@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
+@media screen and (max-width: 640px) {
+  .bg__desktop {
+    display: none;
+  }
+
+  .bg__mobile {
+    display: block !important;
+    width: 100vw;
+    min-height: 750px;
+  }
+  .bg__mobile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 840px !important;
+  }
+
+  header .logo {
+    width: 105px !important;
+  }
+
+  header a {
+    font-size: 0.9rem !important;
+    padding: 0.7rem 1.9rem !important;
+  }
+
+  .about__container {
+    margin-top: 8vh !important;
+    flex-direction: column;
+  }
+
+  .about__container .about__text {
+    text-align: center;
+    margin-bottom: 7vh !important;
+    width: 85% !important;
+  }
+
+  .about__container .about__text h1 {
+    font-size: 1.39rem !important;
+  }
+
+  .about__container .about__text p {
+    margin-bottom: 6vh !important;
+    font-size: 1rem !important;
+  }
+
+  .about__container .about__text a {
+    padding: 1rem 2rem !important;
+  }
+
+  .about__container .about__img {
+    width: 90% !important;
+  }
+
+  .work__container {
+    margin-top: 20vh !important;
+  }
+
+  .work__container .grow__container,
+.users__container {
+    text-align: center;
+    flex-direction: column-reverse !important;
+    padding: 2rem !important;
+    margin-bottom: 5vh;
+  }
+  .work__container .grow__container img,
+.users__container img {
+    width: 80% !important;
+  }
+
+  .flowing__container {
+    text-align: center;
+    flex-direction: column !important;
+    padding: 2rem !important;
+    margin-bottom: 5vh;
+  }
+  .flowing__container img {
+    width: 100% !important;
+  }
+
+  .grow__text,
+.flowing__text,
+.users__text {
+    width: 90% !important;
+  }
+  .grow__text h3,
+.flowing__text h3,
+.users__text h3 {
+    margin-top: 3vh !important;
+    margin-bottom: 3vh !important;
+    font-size: 1.8rem !important;
+  }
+  .grow__text p,
+.flowing__text p,
+.users__text p {
+    font-size: 1rem !important;
+  }
+
+  .community__container {
+    margin-top: 90px !important;
+    width: 100% !important;
+    padding: 2rem 0.5rem !important;
+  }
+
+  .community__container h2 {
+    font-size: 1.1rem !important;
+    margin-bottom: 30px !important;
+  }
+
+  .community__container a {
+    font-size: 1rem !important;
+    padding: 1rem 2rem !important;
+  }
+
+  .footer__container {
+    margin-top: 8vh !important;
+  }
+
+  .footer__container .footer__logo {
+    width: 200px !important;
+    margin-bottom: 5vh;
+  }
+
+  .contact__container {
+    flex-direction: column !important;
+  }
+
+  .contact__container .contact__adress {
+    width: 100% !important;
+  }
+
+  .contact__container .contact__social {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__container .contact__social p {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 0.9rem !important;
+  }
+}
+/*FONTS*/
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  z-index: 1;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg__desktop,
+.bg__mobile {
+  position: absolute;
+  background-color: #ebfbff;
+}
+
+.bg__desktop {
+  width: 100vw;
+  min-height: 100vh;
+}
+.bg__desktop img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bg__mobile {
+  display: none;
+}
+
+.bg__footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #00252e;
+  width: 100vw;
+  height: 53vh;
+}
+
+.header {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: auto;
+}
+.header a {
+  color: #00252e;
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.9rem 4.5rem;
+  border-radius: 30px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.header a:hover {
+  color: #808d99;
+}
+
+.about__container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.about__container .about__text {
+  width: 45%;
+}
+.about__container .about__text h1 {
+  font-size: 3rem;
+}
+.about__container .about__text p {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.about__container .about__text a {
+  background-color: #ff52bf;
+  color: white;
+  padding: 1.2rem 5rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.about__container .about__img {
+  width: 50%;
+}
+
+.work__container {
+  margin-top: 35vh;
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.work__container h3 {
+  font-size: 2.5rem;
+}
+.work__container p {
+  color: #808d99;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.grow__container,
+.flowing__container,
+.users__container {
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+.grow__container img,
+.flowing__container img,
+.users__container img {
+  width: 35%;
+}
+
+.grow__text,
+.flowing__text,
+.users__text {
+  width: 45%;
+}
+
+.community__container {
+  margin-top: 20vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  padding: 4rem 4.9rem;
+  background-color: white;
+}
+.community__container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5vh;
+}
+.community__container a {
+  font-size: 1.3rem;
+  background-color: #ff52bf;
+  color: white;
+  padding: 1.6rem 8rem;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.community__container a:hover {
+  background-color: #fcc5e7;
+}
+
+.footer__container {
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.footer__container .footer__logo {
+  width: 20%;
+  margin-bottom: 5vh;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__container .contact__adress {
+  width: 25%;
+}
+.contact__container .contact__adress li .icon {
+  margin-right: 30px;
+}
+.contact__container .contact__adress .location .icon {
+  width: 12%;
+}
+.contact__container .contact__adress .email,
+.contact__container .contact__adress .phone {
+  align-items: center;
+}
+.contact__container .contact__adress li {
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: flex-start;
+}
+.contact__container .contact__about li {
+  margin-bottom: 2vh;
+}
+.contact__container .contact__career li {
+  margin-bottom: 2vh;
+}
+.contact__container .contact__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__container .contact__social span {
+  margin-right: 5px;
+}
+.contact__container .social__icon-link {
+  display: flex;
+}
+.contact__container .social__icon-link a {
+  margin-right: 1vw;
+}
+.contact__container .facebook:hover path {
+  fill: #ff52bf;
+}
+.contact__container .twitter:hover path {
+  fill: #ff52bf;
+}
+.contact__container .instagram:hover path {
+  fill: #ff52bf;
+}
+
+/*# sourceMappingURL=style.css.map */
