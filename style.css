@@ -147,6 +147,96 @@
     font-size: 0.9rem !important;
   }
 }
+@media screen and (max-width: 1024px) {
+  .bg__desktop {
+    width: 100vw;
+    min-height: 700px !important;
+  }
+
+  .bg__footer {
+    height: 600px !important;
+  }
+
+  .header * {
+    transform: scale(0.9);
+  }
+
+  .about__container .about__text h1 {
+    font-size: 2rem !important;
+  }
+  .about__container .about__text p {
+    font-size: 1.2rem !important;
+  }
+  .about__container .about__text a {
+    padding: 1.1rem 4.5rem !important;
+  }
+  .about__container .about__img {
+    width: 50%;
+  }
+
+  .work__container {
+    margin-top: 250px !important;
+  }
+  .work__container h3 {
+    font-size: 1.7rem !important;
+  }
+  .work__container p {
+    font-size: 1.1rem !important;
+  }
+
+  .grow__container,
+.flowing__container,
+.users__container {
+    margin-bottom: 50px;
+  }
+
+  .grow__text,
+.flowing__text,
+.users__text {
+    width: 50% !important;
+  }
+
+  .community__container {
+    margin-top: 150px !important;
+    width: 85% !important;
+  }
+  .community__container h2 {
+    font-size: 2rem !important;
+    margin-bottom: 50px !important;
+  }
+
+  .footer__container {
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  .footer__container .footer__logo {
+    width: 20%;
+    margin-bottom: 5vh;
+  }
+
+  .contact__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact__container .contact__adress {
+    width: 40% !important;
+  }
+  .contact__container .contact__about {
+    margin-right: 10px;
+  }
+  .contact__container .contact__career {
+    margin-right: 10px;
+  }
+  .contact__container .contact__social p {
+    font-size: 0.9rem;
+  }
+}
 /*FONTS*/
 /*
   Josh's Custom CSS Reset
