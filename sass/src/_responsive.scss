@@ -1,9 +1,223 @@
 $very-small: 'screen and (max-width: 320px)';
 $small: 'screen and (max-width: 640px)';
-$medium-up: 'screen and (max-width: 1024px)';
-// $medium-up: 'screen and (max-width: )';
+$medium-up: 'screen and (max-width: 1280px)';
+$medium-down: 'screen and (max-width: 950px)';
+
 // $large: 'screen and (max-width: )';
 // $very-large: 'screen and (max-width:)';
+@media #{$medium-up} {
+
+   //BACKGROUND POSITION
+   .bg__desktop {
+      width: 100vw;
+      min-height: 700px !important;
+   }
+
+   .bg__footer {
+      height: 600px !important;
+   }
+
+   //HEADER
+   .header {
+      * {
+         transform: scale(0.9);
+      }
+
+   }
+
+   //ABOUT CONTAINER
+   .about__container {
+      .about__text h1 {
+         font-size: 2rem !important;
+      }
+
+      .about__text p {
+         font-size: 1.2rem !important;
+      }
+
+      .about__text a {
+         padding: 1.1rem 4.5rem !important;
+      }
+
+      .about__img {
+         width: 50%;
+      }
+   }
+
+   //WORK CONTAINER
+   .work__container {
+      margin-top: 250px !important;
+
+      h3 {
+         font-size: 1.7rem !important;
+      }
+
+      p {
+         font-size: 1.1rem !important;
+      }
+   }
+
+   .grow__container,
+   .flowing__container,
+   .users__container {
+      margin-bottom: 50px;
+   }
+
+   .grow__text,
+   .flowing__text,
+   .users__text {
+      width: 50% !important;
+   }
+
+   //COMMUNITY CONTAINER
+   .community__container {
+      margin-top: 150px !important;
+      width: 85% !important;
+
+      h2 {
+         font-size: 2rem !important;
+         margin-bottom: 50px !important;
+      }
+
+      a {
+         font-size: 1.4rem !important;
+         padding: 1.2rem 5rem !important;
+      }
+   }
+
+   //FOOTER CONTAINER
+   .contact__container {
+
+      .contact__adress {
+         width: 40% !important;
+      }
+
+      .contact__about {
+         margin-right: 10px;
+      }
+
+      .contact__career {
+         margin-right: 10px;
+      }
+
+      .contact__social p {
+         font-size: 0.9rem;
+      }
+   }
+}
+
+@media #{$medium-down} {
+
+   //MAIN
+   main {
+      max-width: 95vw !important;
+   }
+
+   //BACKGROUND POSITION
+   .bg__desktop {
+      width: 100vw;
+      min-height: 500px !important;
+   }
+
+   .bg__footer {
+      height: 550px !important;
+   }
+
+   //ABOUT CONTAINER
+   .about__container {
+      .about__text h1 {
+         font-size: 1.5rem !important;
+      }
+
+      .about__text p {
+         margin-top: 15px !important;
+         margin-bottom: 30px !important;
+         font-size: 0.9rem !important;
+      }
+
+      .about__text a {
+         font-size: 0.8rem;
+         padding: 1rem 2rem !important;
+      }
+
+      .about__img {
+         width: 50%;
+      }
+   }
+
+   //WORK CONTAINER
+   .work__container {
+      margin-top: 150px !important;
+
+      h3 {
+         font-size: 1.4rem !important;
+         margin-bottom: 10px !important;
+      }
+
+      p {
+         font-size: 0.8rem !important;
+      }
+   }
+
+   .grow__container,
+   .flowing__container,
+   .users__container {
+      padding: 3.5rem !important;
+   }
+
+   //COMMUNITY CONTAINER
+   .community__container {
+      margin-top: 100px !important;
+      width: 90% !important;
+
+      h2 {
+         font-size: 1.5rem !important;
+         margin-bottom: 40px !important;
+      }
+
+      a {
+         font-size: 1rem !important;
+         padding: 1.2rem 5rem !important;
+      }
+   }
+
+   //FOOTER CONTAINER
+   .footer__container {
+      .footer__logo {
+         margin-bottom: 40px !important;
+      }
+   }
+
+   .contact__container {
+      display: flex;
+      justify-content: space-between;
+
+      .contact__adress {
+         width: 40% !important;
+
+         li .icon {
+            margin-right: 15px !important;
+         }
+      }
+
+      .contact__about {
+         margin-right: 10px;
+      }
+
+      .contact__career {
+         margin-right: 10px;
+      }
+
+      .contact__social svg {
+         height: 33px;
+         width: 33px;
+      }
+
+      .contact__social p {
+         font-size: 0.9rem;
+      }
+   }
+}
 
 @media #{$small} {
 
@@ -159,119 +373,5 @@ $medium-up: 'screen and (max-width: 1024px)';
       margin-top: 4vh;
       margin-bottom: 4vh;
       font-size: 0.9rem !important;
-   }
-}
-
-@media #{$medium-up} {
-
-   //BACKGROUND POSITION
-   .bg__desktop {
-      width: 100vw;
-      min-height: 700px !important;
-   }
-
-   .bg__footer {
-      height: 600px !important;
-   }
-
-   //HEADER
-   .header {
-      * {
-         transform: scale(0.9);
-      }
-
-   }
-
-   //ABOUT CONTAINER
-   .about__container {
-      .about__text h1 {
-         font-size: 2rem !important;
-      }
-
-      .about__text p {
-         font-size: 1.2rem !important;
-      }
-
-      .about__text a {
-         padding: 1.1rem 4.5rem !important;
-      }
-
-      .about__img {
-         width: 50%;
-      }
-   }
-
-   //WORK CONTAINER
-   .work__container {
-      margin-top: 250px !important;
-
-      h3 {
-         font-size: 1.7rem !important;
-      }
-
-      p {
-         font-size: 1.1rem !important;
-      }
-   }
-
-   .grow__container,
-   .flowing__container,
-   .users__container {
-      margin-bottom: 50px;
-   }
-
-   .grow__text,
-   .flowing__text,
-   .users__text {
-      width: 50% !important;
-   }
-
-   //COMMUNITY CONTAINER
-   .community__container {
-      margin-top: 150px !important;
-      width: 85% !important;
-
-      h2 {
-         font-size: 2rem !important;
-         margin-bottom: 50px !important;
-      }
-   }
-
-   //FOOTER CONTAINER
-   .footer__container {
-      margin-top: 5vh;
-      margin-bottom: 6vh;
-      display: flex;
-      flex-direction: column;
-      width: 95%;
-      color: $white;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-
-      .footer__logo {
-         width: 20%;
-         margin-bottom: 5vh;
-      }
-   }
-
-   .contact__container {
-      display: flex;
-      justify-content: space-between;
-
-      .contact__adress {
-         width: 40% !important;
-      }
-
-      .contact__about {
-         margin-right: 10px;
-      }
-
-      .contact__career {
-         margin-right: 10px;
-      }
-
-      .contact__social p {
-         font-size: 0.9rem;
-      }
    }
 }
