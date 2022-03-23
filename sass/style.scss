@@ -4,6 +4,16 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
 
+/*Attribution*/
+.attribution {
+    margin-bottom: 20px;
+    color: $white;
+
+    a {
+        color: $pink;
+    }
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/

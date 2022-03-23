@@ -182,7 +182,7 @@
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 785px !important;
+    height: 810px !important;
   }
 
   header .logo {
@@ -284,6 +284,7 @@
 
   .footer__container {
     margin-top: 8vh !important;
+    margin-bottom: 0px !important;
   }
 
   .footer__container .footer__logo {
@@ -311,6 +312,15 @@
   }
 }
 /*FONTS*/
+/*Attribution*/
+.attribution {
+  margin-bottom: 20px;
+  color: white;
+}
+.attribution a {
+  color: #ff52bf;
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
