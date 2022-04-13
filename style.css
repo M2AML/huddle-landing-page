@@ -1,12 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap");
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .bg__desktop {
     width: 100vw;
     min-height: 700px !important;
   }
 
   .bg__footer {
-    height: 600px !important;
+    height: 560px !important;
+  }
+
+  .work__container {
+    margin-top: 250px !important;
+  }
+
+  .grow__container,
+.flowing__container,
+.users__container {
+    margin-bottom: 50px;
+  }
+
+  .community__container {
+    margin-top: 150px !important;
+    width: 75% !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bg__desktop {
+    width: 100vw;
+    min-height: 600px !important;
+  }
+
+  .bg__footer {
+    height: 480px !important;
   }
 
   .header * {

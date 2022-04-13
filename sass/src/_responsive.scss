@@ -2,10 +2,11 @@ $very-small: 'screen and (max-width: 320px)';
 $small: 'screen and (max-width: 640px)';
 $medium-up: 'screen and (max-width: 1280px)';
 $medium-down: 'screen and (max-width: 950px)';
+$extra-large: 'screen and (max-width: 1440px)';
 
 // $large: 'screen and (max-width: )';
 // $very-large: 'screen and (max-width:)';
-@media #{$medium-up} {
+@media #{$extra-large} {
 
    //BACKGROUND POSITION
    .bg__desktop {
@@ -14,7 +15,38 @@ $medium-down: 'screen and (max-width: 950px)';
    }
 
    .bg__footer {
-      height: 600px !important;
+      height: 560px !important;
+   }
+
+   //WORK CONTAINER
+   .work__container {
+      margin-top: 250px !important;
+   }
+
+   .grow__container,
+   .flowing__container,
+   .users__container {
+      margin-bottom: 50px;
+   }
+
+   //COMMUNITY CONTAINER
+   .community__container {
+      margin-top: 150px !important;
+      width: 75% !important;
+   }
+
+}
+
+@media #{$medium-up} {
+
+   //BACKGROUND POSITION
+   .bg__desktop {
+      width: 100vw;
+      min-height: 600px !important;
+   }
+
+   .bg__footer {
+      height: 480px !important;
    }
 
    //HEADER
